@@ -1,4 +1,3 @@
-```javascript
 const mongoose = require('mongoose');
 
 const subscriptionSchema = new mongoose.Schema({
@@ -27,4 +26,4 @@ const subscriptionSchema = new mongoose.Schema({
 });
 
 module.exports = mongoose.model('Subscription', subscriptionSchema);
-```
+
