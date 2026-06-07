@@ -1,4 +1,3 @@
-```javascript
 const mongoose = require('mongoose');
 
 const customRequestSchema = new mongoose.Schema({
@@ -40,4 +39,4 @@ const customRequestSchema = new mongoose.Schema({
 });
 
 module.exports = mongoose.model('CustomRequest', customRequestSchema);
-```
+
