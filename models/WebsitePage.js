@@ -22,4 +22,3 @@ const websitePageSchema = new mongoose.Schema({
 });
 
 module.exports = mongoose.model('WebsitePage', websitePageSchema);
-
