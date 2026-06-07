@@ -1,4 +1,3 @@
-```javascript
 const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcrypt');
@@ -75,4 +74,4 @@ router.get('/verify', async (req, res) => {
 });
 
 module.exports = router;
-```
+
