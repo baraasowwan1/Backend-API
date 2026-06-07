@@ -1,4 +1,3 @@
-```javascript
 const sgMail = require('@sendgrid/mail');
 
 // Initialize SendGrid
@@ -71,4 +70,4 @@ Submitted: ${new Date(requestData.createdAt).toLocaleString()}
 module.exports = {
   sendCustomRequestEmail
 };
-```
+
