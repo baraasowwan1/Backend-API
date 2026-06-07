@@ -18,9 +18,11 @@ const orderSchema = new mongoose.Schema({
     type: Number,
     required: true
   },
+  payerEmail: String,
+  payerName: String,
   status: {
     type: String,
-    enum: ['completed', 'pending', 'cancelled'],
+    enum: ['completed', 'pending', 'cancelled', 'refunded'],
     default: 'completed'
   },
   createdAt: {
