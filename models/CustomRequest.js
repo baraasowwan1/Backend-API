@@ -1,36 +1,23 @@
 const mongoose = require('mongoose');
 
-const customRequestSchema = new mongoose.Schema({
-  requestId: {
+const subscriptionSchema = new mongoose.Schema({
+  orderId: {
     type: String,
     required: true,
-    unique: true
+    ref: 'Order'
   },
-  name: {
+  billingCycle: {
     type: String,
+    default: 'monthly'
+  },
+  nextBillingDate: {
+    type: Date,
     required: true
   },
-  email: {
-    type: String,
-    required: true
-  },
-  phone: String,
-  company: String,
-  serviceType: {
-    type: String,
-    required: true
-  },
-  budget: String,
-  timeline: String,
-  description: {
-    type: String,
-    required: true
-  },
-  additionalNotes: String,
   status: {
     type: String,
-    enum: ['pending', 'in_progress', 'completed', 'cancelled'],
-    default: 'pending'
+    enum: ['active', 'pending', 'cancelled'],
+    default: 'active'
   },
   createdAt: {
     type: Date,
@@ -38,4 +25,4 @@ const customRequestSchema = new mongoose.Schema({
   }
 });
 
-module.exports = mongoose.model('CustomRequest', customRequestSchema);
+module.exports = mongoose.model('Subscription', subscriptionSchema);
