@@ -32,6 +32,7 @@ app.use('/api/custom-requests', requestsRouter);
 app.use('/api/subscriptions', subscriptionsRouter);
 app.use('/api/admin', adminRouter);
 app.use('/api/website-builder', websiteBuilderRouter);
+app.use('/api/websites', websitesRouter);
 
 // Health check
 app.get('/api/health', (req, res) => {
