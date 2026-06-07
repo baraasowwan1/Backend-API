@@ -12,7 +12,8 @@ const websiteBuilderRouter = require('./routes/websiteBuilder');
 
 const app = express();
 const PORT = process.env.PORT || 10000;
-
+const websitesRouter = require('./routes/websites');
+app.use('/api/websites', websitesRouter);
 // Connect to MongoDB
 connectDB();
 
