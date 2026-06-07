@@ -1,4 +1,3 @@
-```javascript
 const express = require('express');
 const router = express.Router();
 const Subscription = require('../models/Subscription');
@@ -90,4 +89,4 @@ router.get('/order/:orderId', async (req, res) => {
 });
 
 module.exports = router;
-```
+
