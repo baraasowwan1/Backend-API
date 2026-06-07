@@ -1,4 +1,3 @@
-```javascript
 const mongoose = require('mongoose');
 
 const websitePageSchema = new mongoose.Schema({
@@ -23,4 +22,4 @@ const websitePageSchema = new mongoose.Schema({
 });
 
 module.exports = mongoose.model('WebsitePage', websitePageSchema);
-```
+
