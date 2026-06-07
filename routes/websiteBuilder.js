@@ -1,4 +1,4 @@
-```javascript
+
 const express = require('express');
 const router = express.Router();
 const WebsitePage = require('../models/WebsitePage');
@@ -84,4 +84,3 @@ router.get('/pages', async (req, res) => {
 });
 
 module.exports = router;
-```
