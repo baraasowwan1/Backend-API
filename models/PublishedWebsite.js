@@ -73,7 +73,4 @@ const publishedWebsiteSchema = new mongoose.Schema({
   }
 });
 
-publishedWebsiteSchema.index({ subdomain: 1 });
-publishedWebsiteSchema.index({ ownerId: 1 });
-
 module.exports = mongoose.model('PublishedWebsite', publishedWebsiteSchema);
