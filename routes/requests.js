@@ -1,4 +1,3 @@
-```javascript
 const express = require('express');
 const router = express.Router();
 const CustomRequest = require('../models/CustomRequest');
@@ -89,4 +88,4 @@ router.patch('/:requestId/status', async (req, res) => {
 });
 
 module.exports = router;
-```
+
